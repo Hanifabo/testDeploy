@@ -15,7 +15,9 @@ app.use(bodyParser.json());
 app.use(express.static(__dirname + "/public"));
 app.use("/", routes);
 
-var db = process.env.MONGODB_URI || "mongodb://localhost/mindfulApp";
+//var db = process.env.MONGODB_URI || "mongodb://localhost/mindfulApp";
+
+var db = process.env.MONGODB_URI || "mongodb://hanifa:can123@ds127730.mlab.com:27730/mindful";
 
 // Connect mongoose to our database
 mongoose.connect(db, function(error) {
@@ -26,10 +28,11 @@ mongoose.connect(db, function(error) {
   // Or log a success message
   else {
     console.log("mongoose connection is successful");
+      // Start the server
+      app.listen(PORT, function() {
+          console.log("Now listening on port %s! Visit localhost:%s in your browser.", PORT, PORT);
+      });
   }
 });
 
-// Start the server
-app.listen(PORT, function() {
-  console.log("Now listening on port %s! Visit localhost:%s in your browser.", PORT, PORT);
-});
+
