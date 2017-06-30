@@ -15,6 +15,7 @@
     "bcrypt": "^1.0.2",
     "bluebird": "^3.4.7",
     "body-parser": "^1.15.2",
+    "connect-flash": "^0.1.1",
     "express": "^4.14.0",
     "mongoose": "^4.7.5",
     "node-pre-gyp": "^0.6.36",
