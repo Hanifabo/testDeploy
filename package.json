@@ -15,17 +15,16 @@
     "bcrypt": "^1.0.2",
     "bluebird": "^3.4.7",
     "body-parser": "^1.15.2",
-    "connect-flash": "^0.1.1",
     "express": "^4.14.0",
     "mongoose": "^4.7.5",
-    "node-pre-gyp": "^0.6.36",
     "passport": "^0.3.2",
     "passport-google-oauth": "^1.0.0",
     "passport-local": "^1.0.0",
     "path": "^0.12.7",
     "react": "^15.4.1",
     "react-dom": "^15.4.1",
-    "react-router": "^3.0.0"
+    "react-router": "^3.0.0",
+    "youtube-api-search": "0.0.5"
   },
   "devDependencies": {
     "babel-core": "^6.21.0",
