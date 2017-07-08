@@ -23,7 +23,7 @@ class VrYoutube extends Component {
       videos: [] 
   };
 
-    YTSearch({key:apiKeyYoutube, term:'google cardboard vr'}, (video) => {
+    YTSearch({key:apiKeyYoutube, term:'google cardboard vr star wars'}, (video) => {
         this.setState({
           video: video
         });
@@ -38,10 +38,10 @@ class VrYoutube extends Component {
   render() {
     console.log(this.state.videos);
     return (
-      <div className="yt-container">
+      <div>
 
-        {/* render the search bar */}
-        <SearchBar />
+        {/*{ render the search bar }
+        <SearchBar />*/}
         <VideoDetails video={this.state.video} />
         {/* passing data from parent to child */}
       
